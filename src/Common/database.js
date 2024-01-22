@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
+const config = require("config")
 module.exports = ()=>{
     mongoose
-    .connect("mongodb://127.0.0.1:27017/vietpro_shop_api")
+    .connect(config.get("db.mongodb.uri"))
     .then(()=>console.log("connected"));
     return mongoose;
 

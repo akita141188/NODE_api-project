@@ -1,5 +1,5 @@
 const mongoose = require("../../../Common/database")();
 
-exports.oder = (req,res)=>{
-    res.send("send oder")
+exports.order = (req,res)=>{
+    res.send("send order")
 }

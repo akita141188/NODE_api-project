@@ -39,10 +39,12 @@ const productSchema = new mongoose.Schema({
     },
     is_featured:{
         type: Boolean,
-        default: true,
+        default: false,
     },
+},{
+    timestamps: true,
 })
 
-const ProductModel = mongoose.model("Product",productSchema,"products")
+const ProductModel = mongoose.model("Products",productSchema,"products")
 
 module.exports = ProductModel;
